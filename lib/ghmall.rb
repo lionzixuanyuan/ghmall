@@ -48,5 +48,10 @@ module Ghmall
     def exhange_gift(params_hash)
       request("exchangeGift.action", "&cardNo=#{params_hash[:card_num]}&giftID=#{params_hash[:gift_id]}")
     end
+
+    # 每日签到
+    def sign_in_daily(card_num)
+      request("signIn.action", "&cardNo=#{params_hash[:card_num]}")
+    end
   end
 end
