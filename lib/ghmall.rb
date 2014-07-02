@@ -51,7 +51,7 @@ module Ghmall
 
     # 每日签到
     def sign_in_daily(card_num)
-      request("signIn.action", "&cardNo=#{params_hash[:card_num]}")
+      request("signIn.action", "&cardNo=#{card_num}")
     end
   end
 end
